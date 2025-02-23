@@ -23,7 +23,7 @@ func TestCount_NoEvenNumbers(t *testing.T) {
 }
 
 func TestCount_EmptyCollection(t *testing.T) {
-	collection := EmptyCollection
+	collection := EmptyIntCollection
 	result := Count(collection, func(x int) bool {
 		return x%2 == 0
 	})

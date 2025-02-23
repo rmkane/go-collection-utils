@@ -23,7 +23,7 @@ func TestAny_ContainsEvenNumber(t *testing.T) {
 }
 
 func TestAny_EmptyCollection(t *testing.T) {
-	collection := EmptyCollection
+	collection := EmptyIntCollection
 	result := Any(collection, func(x int) bool {
 		return x%2 == 0
 	})

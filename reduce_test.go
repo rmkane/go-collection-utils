@@ -16,7 +16,7 @@ func TestReduceCollection(t *testing.T) {
 }
 
 func TestReduce_EmptyCollection(t *testing.T) {
-	collection := EmptyCollection
+	collection := EmptyIntCollection
 	expected := 0
 	result := Reduce(collection, func(acc, x int) int {
 		return acc + x

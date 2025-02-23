@@ -17,7 +17,7 @@ func TestFilter_ContainsEvenNumbers(t *testing.T) {
 
 func TestFilter_NoEvenNumbers(t *testing.T) {
 	collection := []int{1, 3, 5, 7, 9}
-	expected := EmptyCollection
+	expected := EmptyIntCollection
 	result := Filter(collection, func(x int) bool {
 		return x%2 == 0
 	})
@@ -25,8 +25,8 @@ func TestFilter_NoEvenNumbers(t *testing.T) {
 }
 
 func TestFilter_EmptyCollection(t *testing.T) {
-	collection := EmptyCollection
-	expected := EmptyCollection
+	collection := EmptyIntCollection
+	expected := EmptyIntCollection
 	result := Filter(collection, func(x int) bool {
 		return x%2 == 0
 	})

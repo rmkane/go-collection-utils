@@ -23,7 +23,7 @@ func TestAll_ContainsOddNumber(t *testing.T) {
 }
 
 func TestAll_EmptyCollection(t *testing.T) {
-	collection := EmptyCollection
+	collection := EmptyIntCollection
 	result := All(collection, func(x int) bool {
 		return x%2 == 0
 	})

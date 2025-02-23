@@ -16,8 +16,8 @@ func TestMapCollection(t *testing.T) {
 }
 
 func TestMap_EmptyCollection(t *testing.T) {
-	collection := EmptyCollection
-	expected := EmptyCollection
+	collection := EmptyIntCollection
+	expected := EmptyIntCollection
 	result := Map(collection, func(x int) int {
 		return x * 2
 	})

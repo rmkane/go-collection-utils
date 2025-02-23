@@ -25,7 +25,7 @@ func TestFind_ContainsEvenNumber(t *testing.T) {
 }
 
 func TestFind_EmptyCollection(t *testing.T) {
-	collection := EmptyCollection
+	collection := EmptyIntCollection
 	result, found := Find(collection, func(x int) bool {
 		return x%2 == 0
 	})
