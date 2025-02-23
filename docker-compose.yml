@@ -1,0 +1,7 @@
+services:
+  go-test:
+    build: .
+    container_name: go_test_container
+    command: go test ./...
+    volumes:
+      - .:/usr/app
